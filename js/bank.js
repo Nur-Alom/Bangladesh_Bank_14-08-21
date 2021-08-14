@@ -1,4 +1,5 @@
 document.getElementById('login-btn').addEventListener('click', function () {
+    // get user email.
     const emailField = document.getElementById('user-email');
     const userEmail = emailField.value;
     // console.log(userEmail);
@@ -8,6 +9,7 @@ document.getElementById('login-btn').addEventListener('click', function () {
     const userPassword = passwordField.value;
     // console.log(userPassword);
 
+    // check email & password.
     if (userEmail == 'alom@gmail.com' && userPassword == 'secret') {
         // console.log('main-user');
         window.location.href = 'banking.html';
