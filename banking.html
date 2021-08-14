@@ -21,7 +21,7 @@
             <div class="grid grid-cols-3 gap-4">
                 <div class="bg-blue-400 p-8 rounded text-white">
                     <h3 class="text-2xl ">Deposit</h3>
-                    <h3 class="text-4xl">$00</h3>
+                    <h3 class="text-4xl">$<span id="deposit-amount">00</span> </h3>
                 </div>
                 <div class="bg-green-400 p-8 rounded text-white">
                     <h3 class="text-2xl ">withdraw</h3>
@@ -36,8 +36,8 @@
         <!-- Deposit and withdraw -->
         <section class="mt-8">
             <div class="grid grid-cols-2 gap-4">
-                <div class="bg-blue-400 p-8 rounded text-white">
-                    <h3 class="text-2xl">Deposit</h3>
+                <div class="bg-blue-400 p-8 rounded">
+                    <h3 class="text-2xl text-white">Deposit</h3>
                     <div>
                         <input id="deposit" class="border block w-3/4 mb-2 border-gray-400 rounded px-2"
                             placeholder="$ Amount">
@@ -45,8 +45,8 @@
                             class="bg-yellow-400 px-4 py-2 rounded text-1xl text-white font-bold">Deposit</button>
                     </div>
                 </div>
-                <div class="bg-green-400 p-8 rounded text-white">
-                    <h3 class="text-2xl">Withdraw</h3>
+                <div class="bg-green-400 p-8 rounded">
+                    <h3 class="text-2xl text-white">Withdraw</h3>
                     <div>
                         <input id="withdraw" class="border block w-3/4 mb-2 border-gray-400 rounded px-2"
                             placeholder="$ Amount">
@@ -57,6 +57,7 @@
             </div>
         </section>
     </main>
+    <script src="js/banking.js"></script>
 </body>
 
 </html>
